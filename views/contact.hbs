@@ -1,0 +1,90 @@
+{{> header-portfolio title="Contactez-moi | Landry"}}
+<link rel="stylesheet" href="/static/style/css/contact.css">
+</head>
+
+<body>
+    {{> header}}
+    <main class="main" id="main">
+        <div class="main-title" id="main-title">
+            <h1>Contact</h1>
+        </div>
+        <section class="section-contact-form" id="section-contact-form">
+            <p>Êtes-vous développeur web ? Et voulez-vous qu'on travaille sur un projet ensemble ? Ou êtes-vous un
+                particuler ayant besoin d'un site pour la promotion de votre entreprise , pour mettre en avant votre
+                marque , vos activités ? Eh bien , veuillez tout simplement m'envoyer un message , je prendrai plaisir
+                de le lire et de vous répondre si possible au plus vite :)</p>
+            <form action="/contact/envoyez-moi-un-message" method="POST" id="form-contact" class="form-contact">
+                {{#if success}}
+                <p class="contact-form-info">
+                    {{success}}
+                </p>
+                <div></div>
+
+                {{else}}
+                {{#if info-error}}
+                <p class="contact-form-info error">
+                    {{info-error}}
+                </p>
+                <div></div>
+                {{/if}}
+                {{/if}}
+                <div class="input-flex" id="input-flex">
+
+                    <div class="name input-div" id="name">
+                        <input type="text" id="name-input" class="{{input-error errors " name"}}"
+                            value="{{check errors body 'name'}}" name="name" placeholder="Votre nom" />
+                        {{# if errors.name}}
+                        <p class="error-form">
+                            {{errors.name}}
+                        </p>
+                        {{/if}}
+                    </div>
+
+                    <div class="surname input-div" id="surname">
+                        <input type="text" id="surname-input" class="{{input-error errors " surname"}}"
+                            value="{{check errors body 'surname'}}" placeholder="Votre prénom" name="surname" />
+                        {{# if errors.surname}}
+                        <p class="error-form">
+                            {{errors.surname}}
+                        </p>
+                        {{/if}}
+                    </div>
+
+                    <div class="mail input-div" id="mail">
+                        <input type="email" placeholder="Votre addresse email" class="{{input-error errors " email"}}"
+                            value="{{check errors body 'email'}}" id="email-input" name="email" />
+                        {{# if errors.email}}
+                        <p class="error-form">
+                            {{errors.email}}
+                        </p>
+                        {{/if}}
+                    </div>
+
+                    <div class="objet input-div" id="objet">
+                        <input type="text" id="objet-input" class="{{input-error errors " objet"}}"
+                            value="{{check errors body 'objet'}}" placeholder="Objet du message" name="objet" />
+                    </div>
+                </div>
+
+                <div class="message input-div" id="message">
+                    <textarea is="textarea-autogrow" class="{{input-error errors " message"}}"
+                        value="{{check errors body 'message'}}" placeholder="Votre message" name="message"
+                        id="message-input" cols="30" rows="1"></textarea>
+                    {{# if errors.message}}
+                    <p class="error-form">
+                        {{errors.message}}
+                    </p>
+                    {{/if}}
+                </div>
+                <div class="send-message" id="send-message">
+                    <button type="submit" class="btn btn-outline button-send-message"
+                        id="button-send-message">Envoyer</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    {{> footer}}
+    <script src="/static/script/contact.js" type="module"></script>
+</body>
+
+</html>
