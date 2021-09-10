@@ -9,15 +9,30 @@ main.main .main-title {
 }
 
 main.main .projet-all {
-  margin-top: 80px !important;
+  margin-top: 40px !important;
 }
 
-.projet {
-  display: none;
+main.main .projet-all #projets{
+  width:70% !important;
+  margin:auto;
 }
 
-.projet.active {
-  display: block;
+main.main .projet-all #projets .proj,main.main .projet-all #projets .proj article{
+  width:100% !important;
+}
+
+@media (max-width:1150px){
+  main.main .projet-all #projets{
+    width:90% !important;
+    margin:auto;
+  }
+}
+
+@media (max-width:760px){
+  main.main .projet-all #projets{
+    width:100% !important;
+    margin:auto;
+  }
 }
 
 main.main .projet-all .projets {
@@ -30,6 +45,6 @@ main.main .projet-all .projets .btn-consult {
 }
 
 main.main .projet-all .projets .btn-consult:hover {
-  background: #664b4c;
+  background: var(--color-secondary-hover);
 }
 /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByb2pldHMuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLHNCQUFzQjtFQUN0QixrQkFBa0I7RUFDbEIsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0UsMkJBQTJCO0FBQzdCOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLHdDQUF3QztBQUMxQzs7QUFFQTtFQUNFLGtDQUFrQztFQUNsQyxZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxtQkFBbUI7QUFDckIiLCJmaWxlIjoicHJvamV0cy5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJtYWluLm1haW4ge1xyXG4gIHBhZGRpbmc6IDAgMjVweDtcclxufVxyXG5cclxubWFpbi5tYWluIC5tYWluLXRpdGxlIHtcclxuICBtYXJnaW46IDQ1cHggMCAxMDBweCAwO1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICBsaW5lLWhlaWdodDogMS41O1xyXG59XHJcblxyXG5tYWluLm1haW4gLnByb2pldC1hbGwge1xyXG4gIG1hcmdpbi10b3A6IDgwcHggIWltcG9ydGFudDtcclxufVxyXG5cclxuLnByb2pldCB7XHJcbiAgZGlzcGxheTogbm9uZTtcclxufVxyXG5cclxuLnByb2pldC5hY3RpdmUge1xyXG4gIGRpc3BsYXk6IGJsb2NrO1xyXG59XHJcblxyXG5tYWluLm1haW4gLnByb2pldC1hbGwgLnByb2pldHMge1xyXG4gIGNvbG9yOiB2YXIoLS1tYWluLWNvbG9yLXRleHQpICFpbXBvcnRhbnQ7XHJcbn1cclxuXHJcbm1haW4ubWFpbiAucHJvamV0LWFsbCAucHJvamV0cyAuYnRuLWNvbnN1bHQge1xyXG4gIGJhY2tncm91bmQ6IHZhcigtLWNvbG9yLXNlY29uZGFyeSk7XHJcbiAgd2lkdGg6IDEyMHB4O1xyXG59XHJcblxyXG5tYWluLm1haW4gLnByb2pldC1hbGwgLnByb2pldHMgLmJ0bi1jb25zdWx0OmhvdmVyIHtcclxuICBiYWNrZ3JvdW5kOiAjNjY0YjRjO1xyXG59XHJcbiJdfQ== */

@@ -15,8 +15,8 @@ header.header-portfolio {
 
 header.header-portfolio #header-portfolio-links.sidebar-is-open {
   left: 0px;
-  -webkit-box-shadow: 10000px 0 75px rgba(5, 5, 5, 0.4);
-          box-shadow: 10000px 0 75px rgba(5, 5, 5, 0.4);
+  -webkit-box-shadow: 20px 0 75px rgba(5, 5, 5, 0.4);
+          box-shadow: 20px 0 75px rgba(5, 5, 5, 0.4);
   z-index: 444 !important;
 }
 
@@ -45,7 +45,7 @@ header.header-portfolio nav.header-portfolio-nav .header-portfolio-logo::before{
  position:absolute;
  content:"";
  display: block;
- top:20px;
+ top:10px;
  width:90px;
  height: 90px;
  right:-25px;
@@ -57,7 +57,7 @@ header.header-portfolio nav.header-portfolio-nav .header-portfolio-logo::before{
 
 
 header.header-portfolio nav.header-portfolio-nav .header-portfolio-logo a{
- color:#000;
+ color:#000 !important;
 }
 
 
@@ -72,7 +72,7 @@ header.header-portfolio
   .header-portfolio-links
   nav.nav-header-portfolio-links
   a {
-  color: #f1f1f1;
+  color: #2F0233 !important;
   font-family: "Xiao";
   font-size: 18px;
   margin: 0 15px;
@@ -90,8 +90,8 @@ header.header-portfolio nav.header-portfolio-nav .header-bars {
   font-weight: 800;
   padding: 12px;
   border-radius: 5px;
-  border: 2px solid #f2f1fa;
-  color: #f2f1fa;
+  border: 2px solid var(--main-color-text);
+  color: var(--main-color-text);
   cursor: pointer;
 }
 
@@ -113,7 +113,7 @@ header.header-portfolio .header-portfolio-links {
   top: 0;
   left: -100%;
   bottom: 0;
-  background: rgb(105, 56, 101);
+  background: #CCBBCD !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,55 +163,20 @@ header.header-portfolio
   .header-portfolio-links
   nav.nav-header-portfolio-links
   ul
-  li:not(.active-link):after {
-  position: absolute;
-  content: "";
-  height: 2px;
-  bottom: -13px;
-  opacity: 0;
-  right: 70%;
-  left: 10%;
-  background-color: turquoise;
+  li:not(.active-link):hover a {
+  color:#AD00BC;
 }
-
-header.header-portfolio
-  .header-portfolio-links
-  nav.nav-header-portfolio-links
-  ul
-  li:not(.active-link):hover:after {
-  left: 8px;
-  -webkit-transition: 0.5s ease-in;
-  -o-transition: 0.5s ease-in;
-  transition: 0.5s ease-in;
-  opacity: 1;
-  -webkit-transition-delay: 0;
-       -o-transition-delay: 0;
-          transition-delay: 0;
-}
-
 header.header-portfolio
   .header-portfolio-links
   .nav-header-portfolio-links
   ul
   li.active-link
   a {
-  color: turquoise;
+  color: #AD00BC !important;
+  display:block;
+  font-weight:800;
 }
 
-header.header-portfolio
-  .header-portfolio-links
-  nav.nav-header-portfolio-links
-  ul
-  li:not(.active-link):before {
-  position: absolute;
-  content: "";
-  height: 2px;
-  opacity: 0;
-  left: 30%;
-  right: 80%;
-  bottom: -13px;
-  background-color: turquoise;
-}
 
 header.header-portfolio
   .header-portfolio-links
@@ -226,22 +191,6 @@ header.header-portfolio
   width: 35px;
   bottom: -13px;
 }
-
-header.header-portfolio
-  .header-portfolio-links
-  nav.nav-header-portfolio-links
-  ul
-  li:not(.active-link):hover:before {
-  right: 25%;
-  -webkit-transition: 0.5s ease-in;
-  -o-transition: 0.5s ease-in;
-  transition: 0.5s ease-in;
-  opacity: 1;
-  -webkit-transition-delay: 0;
-       -o-transition-delay: 0;
-          transition-delay: 0;
-}
-
 @media all and (min-width: 300px) {
   header.header-portfolio .header-portfolio-links {
     width: 300px;
@@ -269,7 +218,9 @@ header.header-portfolio
   }
   header.header-portfolio .header-portfolio-links {
     position: static;
-    background: transparent;
+    background: transparent !important;
+    box-shadow: none !important;
+    box-shadow: 0 !important;
     width: 590px;
   }
   header.header-portfolio

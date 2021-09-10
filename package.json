@@ -4,8 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "foreman": "foreman start",
+    "start": "node server.js",
+    "foremane": "foreman start",
     "prefix": "postcss ./static/style/css/*.css --use autoprefixer -d ./static/style/css/"
   },
   "keywords": [],
@@ -26,9 +26,11 @@
     "joi": "^17.4.0",
     "memorystore": "^1.6.6",
     "mustache": "^4.1.0",
+    "netlify-lambda": "^2.0.14",
     "nodemailer": "^6.5.0",
     "nodemon": "^2.0.7",
     "postcss": "^8.2.12",
+    "serverless-http": "^2.7.0",
     "slugify": "^1.5.0",
     "uikit": "^3.6.19-dev.6d6f688b9",
     "validator": "^13.5.2"

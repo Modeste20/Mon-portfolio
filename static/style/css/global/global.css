@@ -28,7 +28,9 @@ body {
   padding: 13px 20px 18px 20px;
   border-radius: 6px;
   padding: auto;
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   width: 180px;
   cursor: pointer !important;
@@ -69,29 +71,15 @@ main.main .main-title {
 }
 
 h1 {
-  font-family: "Glegoo-regular";
-  text-shadow: 3px 1px 1px rgba(0, 0, 0, 0.2);
+  font-family: "Raleway-regular";
+  font-size:40px;
+  font-weight:800;
   text-align: center;
   position: relative;
+  top:40px;
+  margin-top:50px;
   z-index: 0 !important;
 }
-h1:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 200%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 160px;
-  height: 25px;
-  padding-bottom: 15px;
-  background: url(/static/images/section-title-after.png) top 20% left 80%
-    no-repeat;
-  z-index: 0;
-}
-
 body::after {
   content: "";
   display: block;
@@ -178,8 +166,14 @@ a:hover {
   }
 }
 
+@media all and (min-width:700px) and (max-width:900px){
+  body::after{
+    background:url(/static/images/body-after-md-2.png) no-repeat top right;
+  }
+}
 
-@media all and (min-width:700px) and (max-width:1100px){
+
+@media all and (min-width:900px) and (max-width:1100px){
   body::after{
     background:url(/static/images/body-after-md.png) no-repeat top right;
   }

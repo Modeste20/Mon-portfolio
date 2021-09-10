@@ -1,12 +1,13 @@
 const  express = require('express')
-const app = express()
+let app = express()
 const handlebars = require("handlebars")
 const hbs = require('express-handlebars');
 const path = require("path");
 const bodyParser = require("body-parser");
 const session = require("express-session");
 const flash = require("connect-flash");
- const MemoryStore = require('memorystore')(session)
+const MemoryStore = require('memorystore')(session)
+const serverless = require('serverless-http')
 
 
 
@@ -91,7 +92,11 @@ handlebars.registerPartial('footer',require("./views/layout/footer.hbs"))
 
 // run server
 
+let port = process.env.PORT
+if(port === null || port === ''){
+    port = 4000
+}
 
-app.listen(3000,() =>{
-    console.log("En écoute sur le port 3000")
+app.listen(port,() =>{
+    console.log("En écoute sur le port 3000"+process.env.PORT)
 })

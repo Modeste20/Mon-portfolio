@@ -13,7 +13,7 @@ router.get("/projets",(req,res) =>{
     res.render("projets")
 })
 
-router.get('/@me',(req,res) =>{
+router.get('/Landry',(req,res) =>{
     res.render("me")
 })
 

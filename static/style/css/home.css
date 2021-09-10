@@ -24,7 +24,7 @@ main.main .main-about-me .card-section-about-me .avatar-landry {
   height: 216px;
   border-radius: 50%;
   margin: auto;
-  background-color: rgb(202, 108, 108);
+  background-color: #B8CCC5;
 }
 
 main.main .main-about-me .card-section-about-me .avatar-landry img {
@@ -71,9 +71,15 @@ main.main
 }
 
 main.main .main-about-me .card-section-about-me .card-footer-about-me {
-  background-color: #b89e9e;
+  background-color: #BDA8BF;
   padding: 12px 15px;
   margin-top: 40px;
+}
+
+main.main .main-about-me .card-section-about-me .card-footer-about-me nav{
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main.main .main-about-me .card-section-about-me .card-footer-about-me nav a {
@@ -85,9 +91,9 @@ main.main .main-about-me .card-section-about-me .card-footer-about-me nav a {
   height: 52px;
   margin: 15px 8px;
   background: -o-linear-gradient(305deg, #a68e8e, #c5a9a9);
-  background: linear-gradient(145deg, #a68e8e, #c5a9a9);
-  -webkit-box-shadow: 5px 5px 34px #7b6a6a, -5px -5px 34px #f5d2d2;
-          box-shadow: 5px 5px 34px #7b6a6a, -5px -5px 34px #f5d2d2;
+  background: linear-gradient(145deg, #DBC5DD, #918193);
+  /*-webkit-box-shadow: 5px 5px 34px #7b6a6a, -5px -5px 34px #f5d2d2;
+          box-shadow: 5px 5px 34px #7b6a6a, -5px -5px 34px #f5d2d2;*/
   color: #014252;
 }
 
@@ -101,7 +107,7 @@ main.main .main-about-me .some-links .btn-projets {
 }
 
 main.main .main-about-me .some-links .btn-projets:hover {
-  border-color: #d03731;
+  border-color: var(--color-secondary-hover);
   color: var(--main-color-text);
 }
 
@@ -112,11 +118,6 @@ main.main .main-about-me .some-links .btn-about {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-
-main.main .main-about-me .some-links .btn-about:hover {
-  background: #341d4f;
-}
-
 main.main .main-about-me .some-links .btn-about:focus {
   -webkit-transform: translateY(4px);
       -ms-transform: translateY(4px);
@@ -124,7 +125,7 @@ main.main .main-about-me .some-links .btn-about:focus {
   color: var(--main-color);
 }
 
-#341D4F #341D4F main.main .main-about-me .some-links .btn-about:hover {
+main.main .main-about-me .some-links .btn-about:hover {
   background: -o-linear-gradient(
     top,
     rgb(23, 2, 26) 0%,
@@ -136,11 +137,7 @@ main.main .main-about-me .some-links .btn-about:focus {
     from(rgb(23, 2, 26)),
     to(rgb(89, 63, 92))
   );
-  background: linear-gradient(
-    to bottom,
-    rgb(23, 2, 26) 0%,
-    rgb(89, 63, 92) 100%
-  );
+  background:var(--color-primary-hover)
 }
 
 main.main
@@ -151,7 +148,7 @@ main.main
   a:hover {
   background: #b89e9e;
   -webkit-box-shadow: inset 5px 5px 34px #7b6a6a, inset -5px -5px 34px #f5d2d2;
-          box-shadow: inset 5px 5px 34px #7b6a6a, inset -5px -5px 34px #f5d2d2;
+          box-shadow: inset 5px 5px 34px #928294, inset -5px -5px 34px #E7C7EA;
 }
 
 main.main
